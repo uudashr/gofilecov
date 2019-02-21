@@ -11,7 +11,7 @@ On legacy app, it's is hard to add unit test for the whole repository/package. T
 ## Usage
 ```
 $ gofilecov
-Usage of ./gofilecov:
+Usage of gofilecov:
   -cover-profile string
     	Coverage profile
   -format string
