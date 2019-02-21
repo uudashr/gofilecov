@@ -12,7 +12,7 @@ On legacy app, it's is hard to add unit test for the whole repository/package. T
 ```
 $ gofilecov
 Usage of gofilecov:
-  -cover-profile string
+  -coverprofile string
     	Coverage profile
   -format string
     	Output format (default "{{ .FileName }}\tcoverage: {{ printf \"%.1f %%\" .coverage }}")
