@@ -13,19 +13,19 @@ func main() {
 	flag.Parse()
 	if *flagCoverProfile == "" || *flagFormat == "" {
 		flag.Usage()
-		os.Exit(2)
+		os.Exit(1)
 	}
 
 	tpl, err := template.New("out").Parse(*flagFormat)
 	if err != nil {
 		fmt.Fprintln(os.Stderr, "Invalid format:", err)
-		os.Exit(2)
+		os.Exit(1)
 	}
 
 	profiles, err := cover.ParseProfiles(*flagCoverProfile)
 	if err != nil {
 		fmt.Fprintln(os.Stderr, "Invalid coverage profiles:", err)
-		os.Exit(2)
+		os.Exit(1)
 	}
 
 	for _, prof := range profiles {
