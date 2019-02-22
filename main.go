@@ -8,7 +8,7 @@ import "text/template"
 
 func main() {
 	flagCoverProfile := flag.String("coverprofile", "", "Coverage profile")
-	flagFormat := flag.String("format", "{{ .FileName }}\tcoverage: {{ printf \"%.1f %%\" .Coverage }}", "Output format")
+	flagFormat := flag.String("format", "{{ .FileName }};{{ .Coverage }}", "Output format")
 
 	flag.Parse()
 	if *flagCoverProfile == "" || *flagFormat == "" {
