@@ -6,7 +6,7 @@ This is Go tool to read coverage profile and show the coverage reports on file b
 On legacy service, it's is hard to add unit test for the whole repository/package. This is why `gofilecov` created, so we can cover only for modified files.
 
 ## Installation
-`$ go get github.com/uudahr/gofilecov`
+`$ go get github.com/uudashr/gofilecov`
 
 ## Usage
 ```
