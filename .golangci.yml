@@ -1,0 +1,14 @@
+linters:
+  enable:
+    - golint
+    - gocyclo
+    - goconst
+    - unconvert
+    - goimports
+    - interfacer
+
+linters-settings:
+  errcheck:
+    exclude: errcheck_exclude.txt
+issues:
+  exclude-use-default: false
